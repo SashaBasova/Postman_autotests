@@ -1,0 +1,153 @@
+{
+	"id": "4bf20f95-7f36-4edf-a1cb-85a6a9c5f24f",
+	"name": "Starwars",
+	"timestamp": "2022-12-13T18:09:44.233Z",
+	"collection_id": "23395284-0f5e2891-37f7-4445-9605-c580bdb3ea61",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "cdde1e48-f969-4b8b-8a21-e17960fa0f73",
+			"name": "People",
+			"url": "https://swapi.dev/api/people/10",
+			"time": 2138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": false,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2138
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": false,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "6622f820-d96d-474c-affc-c5f270d79812",
+			"name": "Planets",
+			"url": "https://swapi.dev/api//planets/7",
+			"time": 1525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Status code name has string": false,
+				"Body matches Endor": true,
+				"Orbital period equel 402": true
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches Endor": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Orbital period equel 402": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1525
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Status code name has string": false,
+					"Body matches Endor": true,
+					"Orbital period equel 402": true
+				}
+			]
+		},
+		{
+			"id": "82352fab-90a9-477e-9d8a-3deba6f1f42d",
+			"name": "Starships",
+			"url": "https://swapi.dev/api/starships/5/",
+			"time": 551,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful GET request": false,
+				"Response time is less than 500ms": false,
+				"X-Frame-Options is present": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"X-Frame-Options is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				551
+			],
+			"allTests": [
+				{
+					"Successful GET request": false,
+					"Response time is less than 500ms": false,
+					"X-Frame-Options is present": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4214,
+	"collection": {
+		"requests": [
+			{
+				"id": "cdde1e48-f969-4b8b-8a21-e17960fa0f73",
+				"method": "GET"
+			},
+			{
+				"id": "6622f820-d96d-474c-affc-c5f270d79812",
+				"method": "GET"
+			},
+			{
+				"id": "82352fab-90a9-477e-9d8a-3deba6f1f42d",
+				"method": "GET"
+			}
+		]
+	}
+}
